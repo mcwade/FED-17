@@ -57,8 +57,8 @@ h2 {
 
       section.show > h2 {
         color: rgb(230,0,0);
-        } {
+        }
 
-    section:last-of-type {
+    section:last-child {
       border: none;
     }
