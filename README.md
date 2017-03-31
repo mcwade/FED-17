@@ -8,3 +8,5 @@ npm install
 @root
 gulp
 
+## Server
+http://localhost:3030

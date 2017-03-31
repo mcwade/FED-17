@@ -16,6 +16,15 @@ gulp.task('sass', function () {
     .pipe(connect.reload());
 });
 
-gulp.task('default', ['sass'], function() {
+//Server and port 
+gulp.task('server', function(event) {
+    connect.server({
+        root: './',
+        port: 3030,
+        livereload: true
+    });
+});
+
+gulp.task('default', ['sass', 'server'], function() {
   gulp.watch(['sass/**/*.scss'], ['sass']);
 });
