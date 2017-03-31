@@ -12,8 +12,9 @@
 			for (var i = 0; i < accordionItem.length; i++) {
 				accordionItem[i].classList.remove('show');
 			}
-			target.classList.add('show');
+			setTimeout(function() {
+				target.classList.add('show');
+			}, 200)
 		}
 	}
-
 })();
